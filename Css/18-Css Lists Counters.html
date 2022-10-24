@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <style>
+  ul{
+      counter-reset: sect;
+      list-style-type: none;
+  }
+  li::before
+  {
+      counter-increment: sect;
+      content: counters(sect,".") " ";
+  }
+    </style>
+    <body>
+        <ul>
+            <li>Godd</li>
+            <li>plain</li>
+            <li>test</li>
+            
+                <ul>
+                    <li>bad</li>
+                    <li>wow</li>
+                    <ul>
+                        <li>hey</li>
+                        <li>hell</li>
+                        <li>kate</li>
+                    </ul>
+                </ul>
+                <li>gii</li>
+                <li>hex</li>
+                <ul>
+                    <li>sur</li>
+                    <li>doos</li>
+                </ul>
+        </ul>
+    </body>
+</html>

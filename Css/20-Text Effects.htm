@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #test1{
+            border: 1px solid bisque;
+            width: 200px;
+            overflow: scroll;
+            text-overflow: ellipsis;    
+            white-space: nowrap;
+        }
+
+        #test2
+        {
+            border: 2px solid green;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: clip;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+        #test2:hover
+        {
+            overflow: visible;
+        }
+
+
+        
+    </style>
+    <body style="background-color: blue;">
+        
+        <div >
+            <p id="test1">SOme test which will not fix sjnldnlknsdlnzxlnlzxknzlxknlzxkkn</p>
+            <p id="test2">SOme test which will not fix lndlkkndzlkknzdnzknzdknzdknz</p>
+        </div>
+       
+    </body>
+</html>

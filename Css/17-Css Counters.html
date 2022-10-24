@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body
+        {
+            counter-reset: sect;
+        }
+        h1{
+            counter-reset: sub-sec;
+        }
+        h1::before
+        {
+
+            counter-increment: sect;
+            content: "sect" counter(sect) ":";
+        }
+        h2::before
+        {
+            counter-increment: sub-sec;
+            content: counter(sect) "." counter(sub-sec);
+        }
+    </style>
+    <body>
+        <h1>Heading</h1>
+        <h2>srh</h2>
+        <h2>Dc</h2>
+        <h2>Mi</h2>
+        <br>
+        <h1>Other heading</h1>
+        <h2>Csk</h2>
+        <h2>RR</h2>
+        <h2>Rcb</h2>
+
+    </body>
+</html>

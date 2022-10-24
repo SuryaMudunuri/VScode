@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+            body
+            {
+                margin: 0;
+            }
+            *
+            {
+                box-sizing: border-box;
+            }
+            .header
+            {
+                text-align: center;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+            .navbar
+            {
+                background-color: #333;
+                overflow: hidden;  
+            }
+            .navbar a
+            {
+                text-decoration: none;
+                float: left;
+                text-align: center;
+                display: block;
+                color: #f2f2f2;
+                padding: 14px 16px;
+            }
+
+            .navbar a:hover
+            {
+                background-color: white;
+                color:black;
+            }
+            .navbar a:active
+            {
+                background-color: aqua;
+            }
+           
+            .cols
+           {
+              float: left;
+              width: 25%;
+              padding: 15px;
+           }
+
+           .row::after
+           {
+             content: "";
+             display: table;
+             clear: both;
+           }
+           @media screen and (max-width:500px)
+           {
+               .cols
+               {
+                   width: 100%;
+               }
+           }
+            
+           .foot
+           {
+               text-align: center;
+               margin-top: 20px;
+               padding: 20px;
+               background-color: #ddd;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="navbar">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </div>
+        
+        <div class="row">
+        <div class="cols">
+            <h2>Column</h2>
+            <p>
+                This is a sampleto test the stacking of Column in various devices using the required max width property.
+            </p>
+            
+        </div>
+        <div class="cols">
+            <h2>Column</h2>
+            <p>
+                This is a sampleto test the stacking of Column in various devices using the required max width property.
+            </p>
+            
+        </div>
+        <div class="cols">
+            <h2>Column</h2>
+            <p>
+                This is a sampleto test the stacking of Column in various devices using the required max width property.
+            </p>
+            
+        </div>
+        <div class="cols">
+            <h2>Column</h2>
+            <p>
+                This is a sampleto test the stacking of Column in various devices using the required max width property.
+            </p>
+            
+        </div>
+        </div>
+
+        <div class="foot">
+            <h2>Footer</h2>
+        </div>
+    </body>
+</html>
